@@ -9,4 +9,4 @@ This chrome extension adds a copy to clipboard action to all the `<code>` tags t
 3. Turn on developer mode on the top right corner.
 4. Click load unpacked extension. It opens up a file picker.
 5. Select the copy-to-clipboard-chrome-ext folder.
-6. Extension is added, Just reload page and copy btn will be added to all the `<code>` tags
+6. Reload page.
