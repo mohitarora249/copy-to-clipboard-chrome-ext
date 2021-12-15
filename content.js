@@ -4,6 +4,7 @@ for (let i = 0; i < codeBlocks.length; i++) {
   const copyBtn = document.createElement("button");
   copyBtn.id = i;
   copyBtn.style.marginLeft = "5px";
+  copyBtn.style.cursor = "pointer";
   copyBtn.style.marginRight = "5px";
   copyBtn.style.border = "1px solid dimgray";
   copyBtn.style.borderRadius = "10px";
@@ -11,5 +12,5 @@ for (let i = 0; i < codeBlocks.length; i++) {
   copyBtn.onclick = () => {
     window.navigator.clipboard.writeText(codeBlocks[i].innerText);
   };
-  codeBlocks[i].appendChild(copyBtn);
+  codeBlocks[i].parentNode.insertBefore(copyBtn, codeBlocks[i].nextSibling);
 }
